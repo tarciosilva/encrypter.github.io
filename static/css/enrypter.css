@@ -1,0 +1,205 @@
+header{
+    padding: 60px;
+    height: 300px;
+    display: block;
+    background-image: url("file:///C:/Users/tarci/Desktop/Allura/Cursos/Challange/ch_1/images/bg.jpg");
+    box-shadow: 0px 10px 20px rgb(0, 0, 0);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    margin-left: 8%;
+ 
+}
+.tsilva{
+    margin-top: 0;
+    margin-left: 18%;
+}
+
+
+body{
+    background: rgb(41, 41, 41);
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-style: normal;
+    
+}
+
+.retangulo-direito{
+    position: absolute;
+    width: 48%;
+    height: 80%;
+    right: 2%;
+    top: 130px;
+    border-radius: none;
+    background: black;
+}
+
+.retangulo-esquerdo{
+    display: inline-block;
+    position: absolute;
+    width: 44%;
+    height: 82%;
+    left: 1%;
+    top: 130px;
+
+    
+}
+
+#text-to-encrypt{
+    width: 100%;
+    height: 88%;
+    display: inline-block;
+    outline: none;
+    position: absolute;
+    border: none;
+    padding: 4vh 2vw 1.5vh;
+    font-size: 300%;
+    text-align: justify;
+    resize: none;
+    color: darkcyan;
+    background: rgb(0, 0, 0);
+    /*border-right: 2px solid rgb(66, 66, 66);*/
+    
+}
+
+
+#text-to-encrypt::placeholder{
+    color: darkcyan;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    
+}
+
+
+#text-encrypted{
+    width: 98%;
+    height: 90%;
+    display: inline-block;
+    outline: none;
+    position: absolute;
+    border: none;
+    padding: 4vh 1vw 1.5vh;
+    font-size: 300%;
+    text-align: justify;
+    resize: none;
+    color: darkcyan;
+    background: rgba(0, 0, 0);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+#text-encrypted::placeholder{
+    color: darkcyan;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    
+}
+
+/*botões*/
+
+.select-encrypt{
+    width: 50vw;
+    display: inline-block;
+    position: absolute;
+    left: 1%;
+    top: 86.5%;
+    background: rgba(129, 129, 129, 0);
+    
+}
+
+.select{
+    padding: 2.6%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: rgb(0, 0, 0);
+    color: darkgreen;
+    width: 46%;
+    
+}
+
+.start-button{
+    width: 50vw;
+}
+
+.start-encrypt{
+ 
+    font-size: 1rem;
+    font-weight: bold;
+    background: rgb(0, 0, 0);
+    color: white;
+    transition: 1s background;
+
+    padding: 1.40%;
+    display: inline-block;
+    position: absolute;
+    left: 25%;
+    top: 86.5%;
+    width: 24%;
+    
+}
+
+.start-encrypt:hover{
+    background: rgb(0, 139, 35);
+    cursor: pointer;
+    
+}
+
+.copy{
+    width: 50vw;
+}
+
+.copy{
+ 
+    font-size: 1rem;
+    font-weight: bold;
+    background: rgb(0, 0, 0);
+    color: white;
+    transition: 1s background;
+
+    padding: 1.40%;
+    display: inline-block;
+    position: absolute;
+    right: 1%;
+    top: 86.5%;
+    width: 24%;
+    
+}
+
+.copy:hover{
+    background: rgb(0, 139, 35);
+    cursor: pointer;
+    
+}
+
+.cleaner{
+ 
+    font-size: 1rem;
+    font-weight: bold;
+    background: rgb(0, 0, 0);
+    color: white;
+    transition: 1s background;
+
+    padding: 1.40%;
+    display: inline-block;
+    position: absolute;
+    right: 26%;
+    top: 86.5%;
+    width: 24%;
+    
+}
+
+.cleaner:hover{
+    background: rgb(0, 139, 35);
+    cursor: pointer;
+    
+}
+
+
+
+
+

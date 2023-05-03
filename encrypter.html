@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./static/css/reset.css">
+        <link rel="stylesheet" href="./static/css/enrypter.css">
+        <link rel="stylesheet" href="./static/css/alert.css">
+        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@1&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="./images/encrypter_favicon.png">
+        <title>Encrypter</title>
+    </head>
+
+    <body>
+        
+        <header>
+                <div class="header">
+                    <img src="./images/allura-logo.png" alt="allura logo">
+                    <div class="tsilva">
+                        <img id="tsiva" src="./images/tsilva.png" alt="tsilva - development">
+                    </div>
+                    <img id="encrypter-logo" src="./images/encrypter.png" alt="encrypter logo">
+                </div>
+        </header>
+                
+        <main>
+
+            <div class="alert" id="alert">
+                <div class="alert-content" id="alert-content">
+                    <span class="close" id="close" onclick="closeModal()">&times;</span>
+                    <p id="message" class="message">
+                        Clique para copiar sua chave de criptografia: 
+                    </p>
+                    <textarea name="key-text" id="key-text" readonly></textarea>
+                    <button onclick="copyKey()" class="button-alert" id="button-alert">Copiar</button>
+                </div>
+
+                <div class="alert-error" id="alert-error">
+                    <span class="close" id="close" onclick="closeModal()">&times;</span>
+                    <p id="message-error" class="message-error">
+                         Erro de Chave
+                    </p>
+                    <p class="error-message" id="error-message">
+                        A chave não atende ao requisito de comprimento. Lembre-se de que a chave <br>
+                        deve conter 30 caracteres e deve ser a mesma fornecida durante o processo <br>
+                        de criptografia para que o texto descriptografado seja idêntico ao original.
+                    </p>
+                    <button onclick="closeModal()" class="button-alert">Fechar</button>
+                </div>
+            </div>
+
+            <section>
+                <div class="retangulo-esquerdo">
+                    <textarea name="text-to-encrypt" id="text-to-encrypt" placeholder="Digite aqui seu texto" rows="4">
+
+                    </textarea>
+                </div>                
+            </section>
+
+            <section>
+                <div class="retangulo-direito" id="rec-direito">
+                    <textarea name="textEncrypt" id="text-encrypted" readonly placeholder="Nada Aqui Ainda..."></textarea>
+                </div>
+            </section>
+        
+            <div class="select-encrypt">
+                <select name="select" id="select" class="select">
+                    <option value="encrypt">Criptografar</option>
+                    <option value="decrypt">Decriptografar</option>
+                </select>
+            </div> 
+            
+            <div class="start-button">
+                <button class="start-encrypt" id="start-encrypt"> START </button>
+            </div>
+
+            <div class="copy-button">
+                <button class="copy" id="copy"> Copiar </button>
+            </div>
+            
+            <div class="cleaner-button">
+                <button class="cleaner" id="cleaner"> Apagar Tela </button>
+            </div>
+            
+        </main>
+
+        <script src="./static/js/encrypter.js"></script>
+        <script src="./static/js/controller.js"></script>
+        <script src="./static/js/main.js"></script>
+
+    </body>
+</html>
