@@ -1,0 +1,8 @@
+.text__containner {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: center;
+    padding-top: 1rem;
+}

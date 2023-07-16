@@ -4,33 +4,46 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./static/css/reset.css">
-        <link rel="stylesheet" href="./static/css/enrypter.css">
-        <link rel="stylesheet" href="./static/css/alert.css">
         <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@1&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/x-icon" href="./images/encrypter_favicon.png">
+
+        <link rel="stylesheet" href="./static/css/reset.css">
+        <link rel="stylesheet" href="./static/css/style.css">
+        <link rel="stylesheet" href="./static/css/alert.css">
+
+        <link rel="stylesheet" href="./static/css/header/header.css">
+        <link rel="stylesheet" href="./static/css/header/header-images.css">
+        <link rel="stylesheet" href="./static/css/header/header-images-image.css">
+
+        <link rel="stylesheet" href="./static/css/text-containner/text-containner.css">
+        <link rel="stylesheet" href="./static/css/text-containner/rect.css">
+
+        <link rel="stylesheet" href="./static/css/buttons/buttons-containner.css">
+        <link rel="stylesheet" href="./static/css/buttons/buttons-content.css">
+        <link rel="stylesheet" href="./static/css/buttons/buttons-list.css">
+        <link rel="stylesheet" href="./static/css/buttons/button__item.css">
+        <link rel="stylesheet" href="./static/css/buttons/button.css">
+
+
         <title>Encrypter</title>
     </head>
 
     <body>
-        
-        <header>
-                <div class="header">
-                    <img src="./images/allura-logo.png" alt="allura logo">
-                    <div class="tsilva">
-                        <img id="tsiva" src="./images/tsilva.png" alt="tsilva - development">
-                    </div>
-                    <img id="encrypter-logo" src="./images/encrypter.png" alt="encrypter logo">
-                </div>
+        <header class="header">
+            <div class="header__images"><img class="header__images__image--allura" src="./images/allura-logo.png" alt="allura logo"></div>
+            <div class="header__images"><img class="header__images__image" id="tsiva" src="./images/tsilva.png" alt="tsilva - development"></div>
+            <div class="header__images"><img class="header__images__image" id="encrypter-logo" src="./images/encrypter.png" alt="encrypter logo"></div>
         </header>
-                
-        <main>
 
+        <main>
             <div class="alert" id="alert">
                 <div class="alert-content" id="alert-content">
                     <span class="close" id="close" onclick="closeModal()">&times;</span>
                     <p id="message" class="message">
-                        Clique para copiar sua chave de criptografia: 
+                        Clique para copiar sua chave de criptografia:
                     </p>
                     <textarea name="key-text" id="key-text" readonly></textarea>
                     <button onclick="copyKey()" class="button-alert" id="button-alert">Copiar</button>
@@ -50,39 +63,50 @@
                 </div>
             </div>
 
-            <section>
-                <div class="retangulo-esquerdo">
+            <div class="text__containner">
+                <div class="rect">
                     <textarea name="text-to-encrypt" id="text-to-encrypt" placeholder="Digite aqui seu texto" rows="4">
 
                     </textarea>
-                </div>                
-            </section>
-
-            <section>
-                <div class="retangulo-direito" id="rec-direito">
-                    <textarea name="textEncrypt" id="text-encrypted" readonly placeholder="Nada Aqui Ainda..."></textarea>
                 </div>
-            </section>
-        
-            <div class="select-encrypt">
-                <select name="select" id="select" class="select">
-                    <option value="encrypt">Criptografar</option>
-                    <option value="decrypt">Decriptografar</option>
-                </select>
-            </div> 
-            
-            <div class="start-button">
-                <button class="start-encrypt" id="start-encrypt"> START </button>
+                <div class="rect" id="rec-direito">
+                    <textarea class="rect--right" name="textEncrypt" id="text-encrypted" readonly placeholder="Nada Aqui Ainda..."></textarea>
+                </div>
             </div>
+            <section class="buttons__containner">
+                <nav class="buttons__content">
+                    <ul class="buttons__list">
+                        <li class="button__item">
+                            <select class="button"  name="select" id="select">
+                                <option class="button__option" value="encrypt">Criptografar</option>
+                                <option class="button__option"  value="decrypt">Decriptografar</option>
+                            </select>
+                        </li class="button__item">
+                        <li>
+                            <button class="button" id="start-encrypt"> START </button>
+                        </li>
+                        <li class="button__item">
+                            <button class="button" id="copy"> Copiar </button>
+                        </li>
+                        <li class="button__item">
+                            <button class="button" id="cleaner"> Apagar Tela </button>
+                        </li>
+                    </ul>
+                </nav>
+     
+                
+                
+                   
+                
+                
+                   
+                
+                
+                    
+                
 
-            <div class="copy-button">
-                <button class="copy" id="copy"> Copiar </button>
-            </div>
-            
-            <div class="cleaner-button">
-                <button class="cleaner" id="cleaner"> Apagar Tela </button>
-            </div>
-            
+            </section>
+
         </main>
 
         <script src="./static/js/encrypter.js"></script>

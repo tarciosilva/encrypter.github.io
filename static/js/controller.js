@@ -2,7 +2,7 @@ function setSecreen(){
     if (textToEncrypt.value == ""){
         textEncrypt.style.background = 'none';
         textEncrypt.style.background = 'rgba(0, 0, 0, 0.8)';
-        divRecDireito.style.background = "url('file:///C:/Users/tarci/Desktop/Allura/Cursos/Challange/ch_1/images/picture.png')";
+        divRecDireito.style.background = "url('../../../images/picture.png')";
     }
 }
 

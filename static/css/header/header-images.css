@@ -1,0 +1,5 @@
+.header__images {
+    display: flex;
+    height: 70px;
+    justify-content: center;
+}

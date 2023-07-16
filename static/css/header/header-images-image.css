@@ -1,0 +1,11 @@
+.header__images__image {
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    width: 15vw;
+}
+.header__images__image--allura {
+    aspect-ratio: 5/4;
+    object-fit: contain;
+    padding: 0 5vw;
+    width: 2vw;
+}

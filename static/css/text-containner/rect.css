@@ -1,0 +1,21 @@
+.rect textarea {
+    background: rgba(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    color: cyan;
+    font-size: 2.5rem;
+    height: 50vh;
+    outline: none;
+    padding: 1rem 1rem;
+    position: relative;
+    resize: none;
+    text-align: justify;
+    width: 35vw;
+}
+.rect textarea::placeholder{
+    color: cyan;
+    text-shadow: 1px 1px black;
+}
+.rect--right {
+    transition: background .5s ease-in-out;
+}
