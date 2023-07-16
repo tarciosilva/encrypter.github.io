@@ -1,7 +1,7 @@
 function setSecreen(){
     if (textToEncrypt.value == ""){
         textEncrypt.style.background = 'none';
-        textEncrypt.style.background = 'rgba(0, 0, 0, 0.8)';
+        textEncrypt.style.background = 'rgba(0, 0, 0, 1)';
         divRecDireito.style.background = "url('encrypter.github.io/images/picture.png')";
     }
 }
