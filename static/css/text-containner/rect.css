@@ -1,3 +1,9 @@
+.rect h2 {
+    color: rgb(0, 187, 255);
+    font-size: 2rem;
+    padding: .5rem 0;
+    text-align: center;
+}
 .rect textarea {
     background: rgba(0, 0, 0);
     border: none;
@@ -18,4 +24,17 @@
 }
 .rect--right {
     transition: background .5s ease-in-out;
+}
+@media screen 
+  and (max-width: 768px) {
+    .rect h2 {
+        font-size: 1rem;
+        padding-left: 1rem;
+        text-align: left;
+    }
+    .rect textarea {
+        font-size: 1.5rem;
+        height: 25vh;
+        width: 90vw;
+    }
 }

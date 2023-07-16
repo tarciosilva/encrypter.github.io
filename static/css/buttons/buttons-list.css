@@ -6,3 +6,11 @@
     position: relative;
     width: 100vw;
 }
+@media screen 
+  and (max-width: 768px) {
+    .buttons__list {
+        align-items: center;
+        flex-direction: column;
+        gap: .5rem;
+    }
+  }

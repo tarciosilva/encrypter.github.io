@@ -6,3 +6,9 @@
     justify-content: center;
     padding-top: 1rem;
 }
+@media screen 
+  and (max-width: 768px) {
+    .text__containner {
+        flex-direction: column;
+    }
+  }

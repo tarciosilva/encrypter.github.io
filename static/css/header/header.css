@@ -7,3 +7,9 @@
     justify-content: space-around;
     padding: 1rem 5rem;
 }
+@media screen 
+  and (max-width: 768px) {
+    .header {
+        padding: .1rem 1rem;
+    }
+  }

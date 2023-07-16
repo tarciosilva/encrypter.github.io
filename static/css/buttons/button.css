@@ -19,3 +19,9 @@
     color: rgb(42, 1, 72);;
     height: 100%;
 }
+@media screen 
+  and (max-width: 768px) {
+    .button {
+        width: 90vw;
+    }
+  }
